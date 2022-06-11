@@ -1,0 +1,16 @@
+//Write your pseduo code first! 
+//PSEUDO CODE :Celsius to Fahrenheit
+
+document.querrySelector('h1').addEventListener('click', convert)
+//what we`re saying here is that when they click on the h1,we`ll run the addEventListener(our smurf that`s listening to the click),and when it will hear to that click ,we`ll run the convert function
+ function convert(){
+    //1.NEED THE VALUE 
+let enteredVal = document.querySelector('input').value //we create a new function called enteredVal and we`ll get the value from that input
+
+    //2.CONVERT THE VALUE C TO F
+ let temp = enteredVal * 1.8 + 32 //
+
+    //3.SHOW VALUE TO THE USER 
+    document.querrySelector('h2').innerText=temp //let`s say our h2 ,and inside the h2 we`ll use our innerText and we`ll put inside of it whatever temp we`ve is
+ }
+
