@@ -17,6 +17,7 @@ let age=Number(document.querySelector('input').value)
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 //Place the result of the conditional in the paragraph
+let p = document.querryselector('p')
 document.querrySelector('h1').addEventListener('click', ageCheck)
 function ageCheck(){
 let age=Number(document.querySelector('input').value)
@@ -41,16 +42,16 @@ if (age < 16 ){
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 if (age < 16 ){
-    console.log ("you can not drive")
+   p.innerText= "you can not drive"
 }else if (age <18){
-    console.log("they can't hate from outside the club, because they can't even get in")
+    p.innerText= "they can't hate from outside the club, because they can't even get in"
 }else if(age < 21){
-    console.log("they can not drink")
+    p.innerText= "they can not drink"
 }else if(age < 25){
-    console.log("they can not rent cars affordably")
+    p.innerText= "they can not rent cars affordably"
 }else if (age < 30 || age > 30){
-    console.log("there is nothing to look forward for")
+   p.innerText= "there is nothing to look forward for"
 }else{
-    console.log('Goodbye')
+   p.innerText= 'Goodbye'
 }
 
