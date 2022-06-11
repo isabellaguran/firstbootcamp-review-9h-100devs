@@ -1,0 +1,47 @@
+//---Easy
+//create a function that subtracts two numbers and alerts the difference
+function twoNumber(a,b){ //a,b are my parameters 
+    let difference=a-b
+    alert(difference)
+}
+twoNumber(10,5) //we call the function,10 and 5 are my arguments. 10 falls into a,5 falls into b
+
+
+//create a function that divides three numbers and console logs the quotient
+function threeNumber(c,d,e){
+console.log(c/d/e)
+}
+threeNumber(50,10,5)
+
+
+
+//create a function that multiplys three numbers and returns the product
+function threeNumMul(f,g,h){
+    return f*g*h 
+}
+//return means return  the value to where it was called,right now this function isn`t called,so ley`s call it:
+threeNumMul(2,3,4)
+//is going to give return to that location and will dissapear after 
+//if we want to see the return value into the console,then we do:
+let returnedNum = threeNumMul(2,3,4)
+console.log(returnedNum)
+
+
+
+//---Medium
+//create a function that takes in three numbers. Add the first two numbers and return the remainder of dividing the sum of the first two numbers by the third number
+function trei(x,y,z){
+    return (x+y)%z
+}
+trei(20,6,4)
+
+//---Hard
+//create a function that takes in 4 numbers. Multiply the first two numbers. If the product is greater than 100 add the sum of the last two numbers and console log the value. If the product is less that 100, subtract the difference of the last two numbers and console log the value. If the product is 100, multiply the first three numbers together and alert the remainder of dividing the fourth number
+function fourNumbers(w,q,s,o){
+ if (w*q) > 100 {
+     console.log(s+o)
+ }else if (w*q) < 100 
+ console.log(s-o)
+}else if (w*q)== 100{
+    alert [(w*q*s)%o]
+}
